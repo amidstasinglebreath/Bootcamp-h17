@@ -1,0 +1,19 @@
+{
+  "name": "hw17",
+  "version": "1.0.0",
+  "description": "Google Books",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amidstasinglebreath/Bootcamp-h17.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amidstasinglebreath/Bootcamp-h17/issues"
+  },
+  "homepage": "https://github.com/amidstasinglebreath/Bootcamp-h17#readme"
+}
