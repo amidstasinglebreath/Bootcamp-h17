@@ -1,12 +1,12 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 
 function Search() {
     const [book, setBook] = useState("");
-    const savedBooks = useState([""]);
+    const [savedBooks, setSavedBooks] = useState([]);
     const [result, setResult] = useState([]);
-    const [apiKey, setApikey] = useState("AIzaSyBP_h9ZqER5RUMqWwc0UhnFoQyJbXQA-jc")
+    const [apiKey, setApikey] = useState("AIzaSyBY5nR0lSX0aRVsexmK9S34-t-cw15YpLs")
 
     function handleChange(event) {
         const book = event.target.value;
@@ -23,11 +23,12 @@ function Search() {
             })
     }
 
-    function handleClick(book){
-        // event.preventDefault();
-        savedBooks.push(book)
+    function handleClick(book) {
+        //event.preventDefault();
+        setSavedBooks([...savedBooks, book]);
         console.log(savedBooks)
-}
+
+    }
 
     return (
         <div className="container">
@@ -43,17 +44,17 @@ function Search() {
                 </div>
                 <button className="btn btn-success">Search</button>
             </form>
-            {result.map(book => (
-                <div className="container">
+            {result.map((book, index) => (
+                <div className="container" key={index}>
                     <div className="card p-2 m-2">
-                <a className="p-3" target="_blank" rel="noopener noreferrer" >
-                    <span className="btn btn-success" onClick={() => (handleClick(book.volumeInfo))}><i className="material-icons">add</i></span>
-                    <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.title} />
-            <h3>{book.volumeInfo.title}</h3>
-            <h4>{book.volumeInfo.authors}</h4>
+                        <a className="p-3" target="_blank" rel="noopener noreferrer" >
+                            <span className="btn btn-success" onClick={() => (handleClick(book.volumeInfo))}><i className="material-icons">add</i></span>
+                            <img src={book.volumeInfo.imageLinks.thumbnail} alt={book.title} />
+                            <h3>{book.volumeInfo.title}</h3>
+                            <h4>{book.volumeInfo.authors}</h4>
 
-                </a>
-                </div>
+                        </a>
+                    </div>
                 </div>
                 // href={book.volumeInfo.previewLink} - for going to google books, but in <a>
             ))}
