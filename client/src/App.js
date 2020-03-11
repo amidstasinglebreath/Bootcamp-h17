@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route path="/" Component={Search}/>
-        <Route exact path="/saved" Component={Saved}/>
+        <Route path="/saved" Component={Saved}/>
       </Switch>
     </div>
     </BrowserRouter>
