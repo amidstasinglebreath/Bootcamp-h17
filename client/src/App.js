@@ -9,7 +9,7 @@ function App() {
   return (
     <>
     <Search/>
-    <Save/>
+    <Saved/>
     <BrowserRouter>
     <div className="App">
       <Switch>
