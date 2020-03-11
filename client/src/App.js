@@ -2,8 +2,8 @@ import React, {useState, Component} from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
-import Search from './components/pages/search';
-// import saved from './components/pages/saved';
+import Search from './components/pages/Search';
+import Saved from './components/pages/Saved';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Switch>
         <Route path="/" Component={Search}/>
-        {/* <Route exact path="/saved" Component={saved}/> */}
+        <Route exact path="/saved" Component={Saved}/>
       </Switch>
     </div>
     </BrowserRouter>

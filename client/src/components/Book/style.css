@@ -1,0 +1,29 @@
+.bookContainer {
+    margin: 10px;
+    border: dashed 1px grey;
+    padding: 20px;
+    background-color: lightslategray;
+    border-radius: 10px;
+}
+
+.title-row {
+    background-color: steelblue;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 15px 30px 15px;
+    padding: 10px;
+    color: rgb(223, 215, 215);
+}
+
+.view {
+    background-color: lightslategray;
+    color: black;
+}
+
+.save {
+    background-color: lightslategray;
+    margin: 5px;
+    text-align: center;
+    color: black;
+
+}
