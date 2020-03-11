@@ -7,7 +7,7 @@ const APIKEY = "&key=AIzaSyBY5nR0lSX0aRVsexmK9S34-t-cw15YpLs";
 module.exports = {
     findByTitle: function(req, res) {
       const query = req.params.title;
-      const url = `${baseURL}+intitle:${query}${APIKEY}&getResults=10`;
+      const url = `${baseURL}+intitle:${query}${APIKEY}&getResults=21`;
       axios.get(url)
       .then(results => {
         res.json(results.data);

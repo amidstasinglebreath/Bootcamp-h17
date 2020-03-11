@@ -8,13 +8,11 @@ import Saved from './components/pages/Saved';
 function App() {
   return (
     <>
-    <Search/>
-    <Saved/>
     <BrowserRouter>
     <div className="App">
       <Switch>
-        <Route path="/" Component={Search}/>
-        <Route path="/saved" Component={Saved}/>
+        <Route path="/" exact component={Search}/>
+        <Route path="/saved" component={Saved}/>
       </Switch>
     </div>
     </BrowserRouter>
