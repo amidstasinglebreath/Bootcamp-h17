@@ -3,6 +3,7 @@ import API from "../../../utils/API";
 import SearchBar from "../../SearchBar";
 import Book from "../../Book";
 import { Container } from "react-bootstrap";
+import Title from "../../Title";
 import "./style.css";
 
 function Search() {

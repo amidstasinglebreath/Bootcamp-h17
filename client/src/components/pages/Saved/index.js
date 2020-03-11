@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container } from "react-bootstrap";
 import API from "../../../utils/API";
 import Book from "../../Book";
+import Title from "../../Title";
 import "./style.css";
 
 
