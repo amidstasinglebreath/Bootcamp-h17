@@ -47,7 +47,7 @@ function Search() {
   console.log("books", books);
   return (
     <Container className="main">
-      <Title title="Google Book Search" sub="Search for, and save books, that you'd like to read!" />
+      <Title title="Google Book Search" sub="Search and save books that you'd like to read" />
       <SearchBar handleFormSubmit={handleFormSubmit} handleOnChange={handleOnChange} value={search} />
       <Container className="bookView">
         {books.map(book =>

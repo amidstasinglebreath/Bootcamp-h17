@@ -1,0 +1,16 @@
+.title {
+    padding: 40px;
+    background-color: rgba(16, 29, 212, 0.363);
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
+
+h5 {
+    font-size: 20px;
+    color: white;
+}
